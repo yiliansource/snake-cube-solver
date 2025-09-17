@@ -133,7 +133,7 @@ function App() {
     };
 
     return (
-        <main className="flex flex-col max-w-xl mx-auto pt-8 pb-4">
+        <main className="flex flex-col max-w-xl mx-auto px-2 pt-8 pb-4">
             <h1 className="text-4xl mb-6">Snake Cube Solver</h1>
             <div className="flex flex-row gap-2">
                 <label className="shrink-0">Snake Shape:</label>
@@ -186,14 +186,14 @@ function App() {
                             points={previewPath}
                             color="green"
                             lineWidth={2}
-                            renderOrder={9999}
+                            renderOrder={1000}
                             depthTest={false}
                             depthWrite={false}
                         />
                     )}
                     <mesh
                         position={previewPath.length > 0 ? previewPath[previewPath.length - 1] : new Vector3(0, 0, 0)}
-                        renderOrder={9999}
+                        renderOrder={1001}
                     >
                         <sphereGeometry args={[0.15]} />
                         <meshStandardMaterial color="green" depthTest={false} depthWrite={false} />
