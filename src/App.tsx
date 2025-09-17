@@ -221,14 +221,14 @@ export default App;
 
 function WoodenBlock({ dark, ...props }: JSX.IntrinsicElements["mesh"] & { dark: boolean }) {
     const lightTextures = useTexture({
-        map: "/textures/plywood_1k/plywood_diff_1k.jpg",
-        normalMap: "/textures/plywood_1k/plywood_nor_gl_1k.jpg",
-        roughnessMap: "/textures/plywood_1k/plywood_rough_1k.jpg",
+        map: "./textures/plywood_1k/plywood_diff_1k.jpg",
+        normalMap: "./textures/plywood_1k/plywood_nor_gl_1k.jpg",
+        roughnessMap: "./textures/plywood_1k/plywood_rough_1k.jpg",
     });
     const darkTextures = useTexture({
-        map: "/textures/wood_table_worn_1k/wood_table_worn_diff_1k.jpg",
-        normalMap: "/textures/wood_table_worn_1k/wood_table_worn_nor_gl_1k.jpg",
-        roughnessMap: "/textures/wood_table_worn_1k/wood_table_worn_rough_1k.jpg",
+        map: "./textures/wood_table_worn_1k/wood_table_worn_diff_1k.jpg",
+        normalMap: "./textures/wood_table_worn_1k/wood_table_worn_nor_gl_1k.jpg",
+        roughnessMap: "./textures/wood_table_worn_1k/wood_table_worn_rough_1k.jpg",
     });
 
     return (
